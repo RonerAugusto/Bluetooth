@@ -128,31 +128,104 @@ public class Mainbluetooth extends AppCompatActivity implements View.OnClickList
 
 
 
-           public  void ligar(View v)
-           {
-                if ( btSocket != null)
-                {
+           public  void ligar(View v) {
+               if (btSocket != null) {
 
-                    dadosEnviados("a");
-                }else
-                {
-                    AlertDialog.Builder  alert= new AlertDialog.Builder(this);
-                    alert.setMessage("Bluettoth nao esta conectado" );
-                    alert.setNeutralButton("OK", null);
-                    alert.show();
+                   dadosEnviados("a");
+               } else {
+                   AlertDialog.Builder alert = new AlertDialog.Builder(this);
+                   alert.setMessage("Bluettoth nao esta conectado");
+                   alert.setNeutralButton("OK", null);
+                   alert.show();
 
-                }
+               }
+           }
+
+    public  void ligarDois(View v)
+    {
+        if ( btSocket != null)
+        {
+
+            dadosEnviados("b");
+        }else
+        {
+            AlertDialog.Builder  alert= new AlertDialog.Builder(this);
+            alert.setMessage("Bluettoth nao esta conectado" );
+            alert.setNeutralButton("OK", null);
+            alert.show();
+
+        }
 
 
 
 
            }
 
+    public  void ligarTres(View v)
+    {
+        if ( btSocket != null)
+        {
+
+            dadosEnviados("d");
+        }else
+        {
+            AlertDialog.Builder  alert= new AlertDialog.Builder(this);
+            alert.setMessage("Bluettoth nao esta conectado" );
+            alert.setNeutralButton("OK", null);
+            alert.show();
+
+        }
+
+
+
+
+    }
+
+    public  void ligarQuatro(View v)
+    {
+        if ( btSocket != null)
+        {
+
+            dadosEnviados("e");
+        }else
+        {
+            AlertDialog.Builder  alert= new AlertDialog.Builder(this);
+            alert.setMessage("Bluettoth nao esta conectado" );
+            alert.setNeutralButton("OK", null);
+            alert.show();
+
+        }
+
+
+
+
+    }
+
+    public  void Abrir_porta(View v)
+    {
+        if ( btSocket != null)
+        {
+
+            dadosEnviados("n");
+        }else
+        {
+            AlertDialog.Builder  alert= new AlertDialog.Builder(this);
+            alert.setMessage("Bluettoth nao esta conectado" );
+            alert.setNeutralButton("OK", null);
+            alert.show();
+
+        }
+
+
+
+
+    }
+
            public void desligar( View v)
            {
                if ( btSocket != null)
                {
-                   dadosEnviados("b");
+                   dadosEnviados("c");
                }else
                {
                    AlertDialog.Builder  alert= new AlertDialog.Builder(this);
@@ -164,6 +237,7 @@ public class Mainbluetooth extends AppCompatActivity implements View.OnClickList
 
 
            }
+
 
             @Override
             protected void onActivityResult(int requestCode, int resultCode, Intent data)

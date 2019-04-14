@@ -1,9 +1,11 @@
 <resources>
-    <string name="app_name">Bluetooth</string>
+    <string name="app_name">MyHouse</string>
     <string name="action_settings">Settings</string>
     <string name="lblconecao" />
     <string name="lblConectar">Conectar</string>
     <string name="lblDesconectar">Desconectar</string>
     <string name="lblLigar">Ligar</string>
     <string name="lblDesligar">Desligar</string>
+    <string name="lblLigardois">Ligar</string>
+    <string name="lblDesligardois">Desligar</string>
 </resources>

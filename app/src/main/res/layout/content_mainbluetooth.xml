@@ -9,6 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
+    android:background="@drawable/background"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.inovert.eletrica.bluetooth.Mainbluetooth"
     tools:showIn="@layout/activity_mainbluetooth"
@@ -18,14 +19,15 @@
         android:layout_width="match_parent"
 
         android:layout_height="77dp"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
 
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/lblConectar"
-            android:background="@drawable/buttonanel"
+            android:background="@drawable/buttonpressioned_3"
             android:onClick="conectar"
             android:layout_weight="1" />
 
@@ -33,31 +35,124 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/lblDesconectar"
-            android:background="@drawable/buttonamarelo"
+            android:background="@drawable/buttonpressioned_3"
             android:onClick="desconetar"
             android:layout_weight="1" />
     </LinearLayout>
 
+    //with resorce the onclick doesn't necessary to declare button in main pag
+
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="125dp">
+        android:layout_height="113dp"
+        android:weightSum="1">
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/lblLigar"
-            android:background="@drawable/button"
+            android:text="QUARTO"
+            android:background="@drawable/buttonpresioned"
             android:onClick="ligar" />
 
+
+
+
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/lblDesligar"
-            android:layout_gravity="right"
-            android:background="@drawable/buttonvermelho"
-            android:onClick="desligar" />
+            android:text="QUARTO"
+            android:background="@drawable/buttonpresioned"
+            android:onClick="ligarDois"
+            android:layout_weight="0.01" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PORTA"
+            android:background="@drawable/buttonpresioned"
+            android:onClick="ligar" />
+
     </LinearLayout>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            android:weightSum="1">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="VARANDA"
+            android:background="@drawable/buttonpresioned"
+            android:onClick="ligarTres"
+            android:layout_weight="0.01" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SALA"
+            android:background="@drawable/buttonpresioned"
+            android:onClick="ligarQuatro"
+            android:layout_weight="0.01" />
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DESLIGAR"
+            android:background="@drawable/buttonpressioned_2"
+            android:onClick="desligar" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:weightSum="1">
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PORTA"
+            android:background="@drawable/buttonpresioned"
+            android:onClick="Abrir_porta"
+            android:layout_weight="0.01" />
+
+
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LUZ"
+            android:background="@drawable/buttonpresioned"
+            android:onClick="Abrir_porta"
+            android:layout_weight="0.01" />
+
+        <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HORTA"
+            android:background="@drawable/buttonpresioned"
+            android:onClick="Abrir_porta"
+            android:layout_weight="0.01" />
+    </LinearLayout>
+
+
+
 
 
 </LinearLayout>
